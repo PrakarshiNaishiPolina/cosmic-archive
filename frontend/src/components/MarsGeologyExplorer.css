@@ -1,0 +1,193 @@
+
+.mars-geology {
+  margin-top: 76px;
+  margin-bottom: 76px;
+}
+
+.mars-geology-intro {
+  max-width: 720px;
+  margin: -8px 0 26px;
+  color: var(--text-secondary, #a9a9b5);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.mars-geology-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.mars-geology-sites {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mars-geology-site {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) 16px;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.025);
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mars-geology-site:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.mars-geology-site.active {
+  border-color: var(--geo-color, #e6a078);
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.mars-geology-site-icon,
+.mars-geology-big-icon {
+  display: grid;
+  place-items: center;
+  color: var(--geo-color, #e6a078);
+  background: rgba(255, 255, 255, 0.055);
+  border-radius: 11px;
+}
+
+.mars-geology-site-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.mars-geology-site-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.mars-geology-site-copy small {
+  color: var(--geo-color, #e6a078);
+  font-size: 9px;
+  letter-spacing: 1.1px;
+}
+
+.mars-geology-site-copy strong {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.mars-geology-site-copy > span {
+  color: var(--text-secondary, #a9a9b5);
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.mars-geology-detail {
+  padding: clamp(22px, 3vw, 34px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.045),
+    rgba(255, 255, 255, 0.015)
+  );
+  animation: mars-geology-appear 0.22s ease;
+}
+
+@keyframes mars-geology-appear {
+  from {
+    opacity: 0.65;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mars-geology-detail-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mars-geology-big-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+}
+
+.mars-geology-detail h3 {
+  margin: 22px 0 7px;
+  font-family: Cinzel, serif;
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 500;
+}
+
+.mars-geology-type {
+  margin: 0;
+  color: var(--geo-color, #e6a078);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+.mars-geology-description {
+  margin: 19px 0;
+  color: var(--text-secondary, #a9a9b5);
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.mars-geology-detail h4 {
+  margin: 24px 0 12px;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+}
+
+.mars-geology-detail ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 19px;
+  color: var(--text-secondary, #a9a9b5);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.mars-geology-detail li::marker {
+  color: var(--geo-color, #e6a078);
+}
+
+.mars-geology-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.mars-geology-note {
+  margin: 16px 0 0;
+  color: var(--text-secondary, #a9a9b5);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+  .mars-geology-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .mars-geology {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+}

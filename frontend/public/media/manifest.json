@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Most Amazing High Definition Image of Earth - Blue Marble 2012",
+    "nasa_id": "GSFC_20171208_Archive_e001386",
+    "image_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001386/GSFC_20171208_Archive_e001386~thumb.jpg",
+    "center": "GSFC",
+    "date_created": "2017-12-08T00:00:00Z",
+    "page_url": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001386",
+    "local_file": "frontend\\public\\media\\home-earth.jpg"
+  },
+  {
+    "title": "OSIRIS-REx Sample Analysis Team Members at NASA Goddard",
+    "nasa_id": "DSCN0123",
+    "image_url": "https://images-assets.nasa.gov/image/DSCN0123/DSCN0123~thumb.jpg",
+    "center": "GSFC",
+    "date_created": "2023-11-08T00:00:00Z",
+    "page_url": "https://images.nasa.gov/details/DSCN0123",
+    "local_file": "frontend\\public\\media\\asteroid-bennu.jpg"
+  },
+  {
+    "title": "James Webb Space Telescope NIRCam Image of the \u201cCosmic Cliffs\u201d in Carina Nebula",
+    "nasa_id": "carina_nebula",
+    "image_url": "https://images-assets.nasa.gov/image/carina_nebula/carina_nebula~thumb.jpg",
+    "center": "STScI (Webb)",
+    "date_created": "2022-07-12T11:00:00Z",
+    "page_url": "https://images.nasa.gov/details/carina_nebula",
+    "local_file": "frontend\\public\\media\\image-nebula.jpg"
+  },
+  {
+    "title": "Perseverance Rover on Mars (Illustration)",
+    "nasa_id": "PIA24343",
+    "image_url": "https://images-assets.nasa.gov/image/PIA24343/PIA24343~thumb.jpg",
+    "center": "JPL",
+    "date_created": "2020-12-21T00:00:00Z",
+    "page_url": "https://images.nasa.gov/details/PIA24343",
+    "local_file": "frontend\\public\\media\\mars-perseverance.jpg"
+  }
+]
