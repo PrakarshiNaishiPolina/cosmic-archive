@@ -757,7 +757,7 @@ export default function Asteroids() {
               <strong>Live data temporarily unavailable</strong>
               <p>{error}</p>
               <a
-                href="http://localhost:8000/api/asteroids?days=7"
+                href={`${import.meta.env.VITE_API_URL || "http://localhost:8000"}/api/asteroids?days=7`}
                 target="_blank"
                 rel="noreferrer"
               >

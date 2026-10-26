@@ -186,7 +186,7 @@ python -m uvicorn main:app --reload
 
 The backend should be available at:
 
-- API base: `http://localhost:8000`
+- API base: `http://localhost:8000,const API_BASE = import.meta.env.VITE_API_URL`
 - Interactive API documentation: `http://localhost:8000/docs`
 
 ### Step 3: Set up the frontend

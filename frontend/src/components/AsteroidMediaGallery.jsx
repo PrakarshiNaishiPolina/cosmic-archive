@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { ExternalLink } from 'lucide-react';
 
-const API = 'http://localhost:8000/api/nasa-images';
+const API = `${import.meta.env.VITE_API_URL || "http://localhost:8000"}/api/nasa-images`;
 
 const SEARCHES = [
   {
